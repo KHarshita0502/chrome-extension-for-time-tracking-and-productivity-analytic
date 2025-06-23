@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>PRODUCTIVITY_TRACKER</title>
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" type="text/css">
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
+    integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+    crossorigin="anonymous">
+  <style>
+    html, body {
+      font-family: 'Open Sans', sans-serif;
+      font-size: 14px;
+      margin: 0;
+      min-height: 200px;
+      padding: 0;
+      width: 320px;
+    }
+    h1 {
+      font-size: 20px;
+      font-weight: 600;
+      color: #2f5876;
+      margin: 10px 0 5px 10px;
+    }
+    p {
+      margin: 5px 10px;
+    }
+    #report {
+      margin: 5px 10px;
+    }
+    a {
+      color: #007bff;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    .flex-container {
+      display: flex;
+      justify-content: space-around;
+      padding: 10px;
+    }
+    .flex {
+      opacity: 1;
+      transition: opacity 0.2s ease-in-out;
+    }
+    .flex:hover {
+      opacity: 0.6;
+    }
+    .flex .fa {
+      font-size: 32px;
+      color: #2f5876;
+    }
+  </style>
+</head>
+<body>
+  <h1>PRODUCTIVITY_TRACKER</h1>
+  <p>Your Weekly Productivity Report:</p>
+  <div id="report">
+    <p>Loading...</p>
+  </div>
+  <a href="dashboard.html" target="_blank" style="margin-left: 10px;">Open Dashboard</a>
+
+  <div class="flex-container">
+    <div class="flex">
+      <a href="https://www.yourproductivesite.com" target="_blank">
+        <i class="fa fa-globe"></i>
+      </a>
+    </div>
+    
+    <div class="flex">
+      <a href="https://www.github.com" target="_blank">
+        <i class="fa fa-github"></i>
+      </a>
+    </div>
+    <div class="flex">
+      <a href="https://www.twitter.com" target="_blank">
+        <i class="fa fa-twitter"></i>
+      </a>
+    </div>
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>
